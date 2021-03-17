@@ -25,10 +25,10 @@ const server =
           // Process the queries here
           res.statusCode = 200      //code for OK
           res.setHeader('Content-Type', 'text/plain') 
-          res.write(`log(${x},${Number}) is ${Math.abs(x , Number)}\n`)
-          res.write(`cosh(${x},${Number}) is ${Math.acos(x,Number)}\n`)
-          res.write(`floor(${x},${Number}) is ${Math.sin(x,Number)}\n`)
-          res.write(`floor(${x},${Number}) is ${Math.sinh(x,Number)}\n`)
+          res.write(`abs(${x}) is ${Math.abs(x)}\n`)
+          res.write(`acos(${x}) is ${Math.acos(x)}\n`)
+          res.write(`sin(${x}) is ${Math.sin(x)}\n`)
+          res.write(`sinh(${x}) is ${Math.sinh(x)}\n`)
           res.end();
         
       } else {
